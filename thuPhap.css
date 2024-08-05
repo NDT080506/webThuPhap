@@ -1,0 +1,228 @@
+body {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+#container {
+    max-width: 1000px; 
+    margin: 0;
+    padding: 0;
+}
+
+#navBar ul {
+    list-style-type: none;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#navBar a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+#navBar a:hover{
+    color: yellow;
+}
+
+#navBar li {
+    float: left;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    max-height: 672px;
+    display: none;
+    cursor: pointer;
+}
+
+img.displaySlide {
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(56, 55, 55);
+    color: white;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.next {
+    right: 0;
+}
+
+.previous {
+    left: 0;
+}
+
+@keyframes fade {
+    from { opacity: .5; }
+    to { opacity: 1; }
+}
+
+#exhibit {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+#exhibit h2 {
+    background-color: black;
+    margin: 0; 
+    color: white;
+}
+
+.shop{
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Reduced gap between grid items */
+    overflow: visible;
+}
+
+.product {
+    padding-top: 10px;
+    margin: 0; /* Removed margin */
+    text-align: left;
+}
+
+.product span{
+    margin: 20px 0px;
+    color: rgb(158, 156, 156);
+    font-size: small;
+}
+
+.product p{
+    margin: 0 0 15px 0;
+    color: rgb(146, 10, 10);
+    font-size: medium;
+    cursor: pointer;
+}
+
+.product button{
+    border: none;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.product img{
+    width: 100%;
+    max-height: 270px;
+    cursor: pointer;
+}
+
+#event {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+#event h2 {
+    background-color: black;
+    margin: 0; 
+    color: white;
+}
+
+#event #information {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Reduced gap between grid items */
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px; /* Reduced padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Removed margin */
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.card p {
+    margin: 0 0 10px;
+}
+
+.card a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+#activity {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+}
+
+#activity h2 {
+    background-color: black;
+    margin: 0; 
+    color: white;
+}
+
+#activity #images {
+    background-color: whitesmoke;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 240px);
+    gap: 10px;
+}
+
+#activity img{
+    width: 100%;
+    max-height: 179.8px;
+}
+
+#connect{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#connect h2{
+    background-color: black;
+    margin: 0; 
+    color: white;
+}
